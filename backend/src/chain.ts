@@ -32,7 +32,7 @@ export async function answer(csvPath: string, question: string) {
     const docs = await loadCsvAsDocs(csvPath);
     const embeddings = new OpenAIEmbeddings({
       model: "text-embedding-3-small",
-      apiKey: process.env.OPENAI_API_KEY || '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', // ensure it's read here
+      apiKey: process.env.OPENAI_API_KEY,
     });
 
     // Chunk long docs to stay well below model context window
@@ -51,7 +51,7 @@ export async function answer(csvPath: string, question: string) {
     model: "gpt-4o-mini",
     temperature: 0,
     maxRetries: 3,
-    apiKey: process.env.OPENAI_API_KEY || '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',
+    apiKey: process.env.OPENAI_API_KEY,
   });
 
   const chain = RunnableSequence.from([
