@@ -1,6 +1,9 @@
 # Clinical Trials Chatbot (Prototype)
 
-> Note: If there's anything I've missed, please feel free to reach out. I am more than happy to address it
+## Note from Euijae
+
+- Thank you so much for the opportunity. I really enjoyed this challenge and would love the chance to discuss the role further.
+- All features have been tested locally. Please let me know if you encounter any runtime errors. I'd be happy to address them. 
 
 ## Scopes
 
